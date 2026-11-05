@@ -73,20 +73,20 @@ const Hero = () => {
           </h2>
           
           <p data-aos="fade-up" data-aos-delay="300" className="text-xs md:text-sm lg:text-base font-medium text-white/80 md:text-black/80 mb-5 leading-relaxed">
-            Building scalable web applications <br className="hidden sm:block" />
-            and AI-powered solutions that <br className="hidden sm:block" />
-            create real-world impact.
+            Aspiring IT professional focused on <br className="hidden sm:block" />
+            Software Development, DSA & Web Development, <br className="hidden sm:block" />
+            building scalable solutions to solve real-world problems.
           </p>
 
           <div data-aos="fade-up" data-aos-delay="400" className="flex flex-wrap gap-3 md:gap-4 mt-2">
-            <button className="group flex items-center gap-3 pl-5 pr-1.5 py-1.5 bg-black hover:bg-black/90 text-white text-xs md:text-sm font-semibold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 md:border-transparent">
+            <a href="#contact" className="group flex items-center gap-3 pl-5 pr-1.5 py-1.5 bg-black hover:bg-black/90 text-white text-xs md:text-sm font-semibold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 md:border-transparent">
               <span>Contact Me</span>
               <div className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 bg-white rounded-full transition-transform duration-300 group-hover:translate-x-0.5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="black" className="w-3.5 h-3.5 md:w-4 md:h-4">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </div>
-            </button>
+            </a>
           </div>
           
         </div>
