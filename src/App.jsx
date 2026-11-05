@@ -5,7 +5,6 @@ import Preloader from './components/Preloader'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Services from './components/Services'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Certifications from './components/Certifications'
@@ -31,7 +30,6 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <Services />
         <Education />
         <Projects />
         <Certifications />
