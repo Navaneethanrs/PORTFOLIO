@@ -20,8 +20,8 @@ const About = () => {
             About Me
           </h2>
 
-          <p data-aos="fade-right" data-aos-delay="300" className="text-base md:text-lg lg:text-xl text-black/80 font-medium leading-relaxed max-w-lg">
-            Building scalable web applications and AI-powered solutions that create real-world impact.
+          <p data-aos="fade-right" data-aos-delay="300" className="text-sm md:text-base lg:text-lg text-black/85 font-medium leading-relaxed max-w-lg">
+            Aspiring IT professional interested in Software Development, DSA, Web Development, and Emerging Technologies. Passionate about building scalable applications, solving real-world problems, and continuously enhancing technical and problem-solving skills.
           </p>
 
           {/* Infinite Marquee Tags */}
