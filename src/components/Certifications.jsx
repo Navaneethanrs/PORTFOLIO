@@ -7,13 +7,15 @@ const certificates = [
     issuer: 'MathWorks Training Services',
     date: '2025',
     grade: '100% Course Completion',
-    color: '#E8F4FF',
-    accent: '#005f9e',
-    icon: '🔷',
     description:
-      'Covers building and simulating dynamic system models using Simulink — block diagrams, signal routing, subsystems, and model-based design principles used in control systems and embedded engineering.',
+      'Mastered dynamic system modeling and simulation using Simulink. Built block diagrams, signal routing networks, modular subsystems, and model-based designs for control and engineering workflows.',
     skills: ['Simulink', 'Model-Based Design', 'Block Diagrams', 'Signal Routing', 'Control Systems'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25a2.25 2.25 0 0 1-13.5 0v-2.25Z" />
+      </svg>
+    )
   },
   {
     id: '02',
@@ -21,13 +23,15 @@ const certificates = [
     issuer: 'MathWorks Training Services',
     date: '21 April 2025',
     grade: '100% Course Completion',
-    color: '#F0F9FF',
-    accent: '#0284c7',
-    icon: '📊',
     description:
-      'Introduces the MATLAB environment — scripts, functions, matrix operations, data visualization, and signal processing basics for a solid foundation in scientific computing.',
-    skills: ['MATLAB', 'Matrix Operations', 'Data Visualization', 'Signal Processing', 'Numerical Computing'],
+      'Foundational mastery of the MATLAB technical environment: scripts, function authoring, matrix computations, 2D/3D data visualization, and numerical computation automation.',
+    skills: ['MATLAB', 'Matrix Operations', 'Data Visualization', 'Numerical Computing'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+      </svg>
+    )
   },
   {
     id: '03',
@@ -35,13 +39,15 @@ const certificates = [
     issuer: 'Simplilearn SkillUP',
     date: '13 July 2025',
     grade: 'Verified · Code: 8619621',
-    color: '#FDF4FF',
-    accent: '#9333ea',
-    icon: '🤖',
     description:
-      'Covers fundamentals of Generative AI — LLMs, prompt engineering, image generation, ChatGPT applications, and ethical considerations of AI for modern tech roles.',
+      'Comprehensive study of Generative AI principles, Large Language Models (LLMs), prompt engineering strategies, ChatGPT workflows, creative image generation, and ethical considerations.',
     skills: ['Generative AI', 'LLMs', 'Prompt Engineering', 'ChatGPT', 'AI Ethics'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+      </svg>
+    )
   },
   {
     id: '04',
@@ -49,13 +55,15 @@ const certificates = [
     issuer: 'Bharathidasan University — IECD',
     date: 'Feb / Mar 2018',
     grade: 'First Class with Distinction',
-    color: '#EEF2FF',
-    accent: '#4f46e5',
-    icon: '🎓',
     description:
-      'Awarded under the SUITS scheme by IECD, Bharathidasan University. Covers office productivity tools — word processing, spreadsheets, presentations, and digital communication workflows.',
-    skills: ['MS Office', 'Word Processing', 'Spreadsheets', 'Presentations', 'Digital Communication'],
+      'Certified under the SUITS scheme. In-depth training on document engineering, data organization, spreadsheet analytics, presentation design, and administrative digital tools.',
+    skills: ['MS Office', 'Spreadsheets', 'Documentation', 'Digital Workflows'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+      </svg>
+    )
   },
   {
     id: '05',
@@ -63,13 +71,15 @@ const certificates = [
     issuer: 'Bharathidasan University — IECD',
     date: 'February 2019',
     grade: 'First Class with Distinction',
-    color: '#F0FDF4',
-    accent: '#16a34a',
-    icon: '💻',
     description:
-      'Covers fundamental and intermediate programming concepts — logic building, structured programming, algorithms, and problem-solving techniques foundational to software development.',
-    skills: ['Programming Logic', 'Algorithms', 'Structured Programming', 'Problem Solving', 'Data Structures'],
+      'Comprehensive foundation in programming paradigms: computational logic, structured code architecture, iterative problem-solving, and foundational algorithmic thinking.',
+    skills: ['Programming Logic', 'Algorithms', 'Structured Coding', 'Problem Solving'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+      </svg>
+    )
   },
   {
     id: '06',
@@ -77,135 +87,141 @@ const certificates = [
     issuer: 'APT Computer Education',
     date: 'Apr – May 2024',
     grade: 'A+ Grade',
-    color: '#FFF7ED',
-    accent: '#ea580c',
-    icon: '⚙️',
     description:
-      'Mastered C and C++ programming — procedural C, OOP in C++, memory management, pointers, classes, inheritance, and polymorphism for a strong systems-programming foundation.',
-    skills: ['C Programming', 'C++ / OOP', 'Pointers & Memory', 'Inheritance', 'Polymorphism'],
+      'Rigorous training in low-level systems programming and object-oriented principles. Deep coverage of memory models, raw pointers, class hierarchies, polymorphism, and memory management.',
+    skills: ['C', 'C++', 'OOP', 'Pointers & Memory', 'Data Structures'],
     linkedinUrl: 'https://www.linkedin.com/in/navaneethan-sankar/details/certifications/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-6 h-6 text-[#F5EBDD]">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+      </svg>
+    )
   },
 ];
 
-const LinkedInIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-  </svg>
-);
-
 const Certifications = () => {
   return (
-    <section id="certifications" className="w-full bg-[#F9F9F7] py-20 md:py-32 px-4 md:px-12 lg:px-24">
+    <section id="certifications" className="w-full min-h-screen bg-white flex flex-col justify-center items-center py-20 md:py-32 px-4 md:px-8">
       <div className="w-full max-w-6xl mx-auto">
 
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div data-aos="fade-up">
-            <p className="text-xs font-bold tracking-widest text-black/40 uppercase mb-3">— Credentials</p>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-none">
+            <span className="text-black/50 text-xs font-bold tracking-widest uppercase mb-2 block">
+              — Credentials & Badges
+            </span>
+            <h2 className="text-black text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Certifications
             </h2>
           </div>
-          <p data-aos="fade-up" data-aos-delay="150" className="text-black/50 text-sm font-medium max-w-xs md:text-right leading-relaxed">
-            {certificates.length} verified credentials across<br />programming, AI & engineering tools.
+          <p data-aos="fade-up" data-aos-delay="100" className="text-black/60 text-sm md:text-base font-medium max-w-sm md:text-right leading-relaxed">
+            Verified credentials highlighting continuous learning in systems programming, AI, and engineering tools.
           </p>
         </div>
 
-        {/* Card Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Cards Grid - matching the elegant #F5EBDD style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {certificates.map((cert, index) => (
             <div
               key={cert.id}
               data-aos="fade-up"
-              data-aos-delay={index * 80}
-              className="group relative rounded-[24px] overflow-hidden flex flex-col transition-all duration-400 hover:-translate-y-2 hover:shadow-2xl"
-              style={{ backgroundColor: cert.color }}
+              data-aos-delay={index * 120}
+              className="bg-[#F5EBDD] rounded-[32px] p-8 md:p-9 flex flex-col justify-between h-full transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(245,235,221,0.35)] group relative"
             >
-              {/* Top accent line */}
-              <div className="h-1 w-full" style={{ backgroundColor: cert.accent }} />
-
-              <div className="flex flex-col flex-1 p-6">
-
-                {/* Top row: icon + number */}
-                <div className="flex items-start justify-between mb-5">
-                  <div
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shadow-sm"
-                    style={{ backgroundColor: `${cert.accent}18` }}
-                  >
-                    {cert.icon}
-                  </div>
-                  <span className="text-[11px] font-black tracking-widest text-black/20">{cert.id}</span>
+              {/* Top Row: Circular Icon Badge & External Arrow Link */}
+              <div className="flex items-start justify-between mb-10 md:mb-14">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                  {cert.icon}
                 </div>
 
-                {/* Issuer + date */}
-                <p className="text-[10px] font-black tracking-widest uppercase mb-1" style={{ color: cert.accent }}>
-                  {cert.issuer}
-                </p>
-                <p className="text-[10px] font-semibold text-black/35 mb-3">{cert.date}</p>
+                <a
+                  href={cert.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${cert.title} on LinkedIn`}
+                  className="w-10 h-10 rounded-full bg-black/5 hover:bg-black text-black hover:text-white flex items-center justify-center transition-all duration-300 group/link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </a>
+              </div>
+
+              {/* Bottom / Main Content */}
+              <div className="flex flex-col flex-1 justify-end">
+                {/* ID & Issuer */}
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-black/60 text-sm font-semibold tracking-wider block">
+                    {cert.id}
+                  </span>
+                  <span className="text-black/50 text-[11px] font-bold tracking-wider uppercase">
+                    {cert.date}
+                  </span>
+                </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-black tracking-tight text-black leading-snug mb-3 group-hover:translate-x-0.5 transition-transform duration-300">
+                <h3 className="text-2xl md:text-[26px] font-bold text-black mb-2 tracking-tight leading-snug">
                   {cert.title}
                 </h3>
 
-                {/* Grade badge */}
-                <span
-                  className="self-start inline-block px-2.5 py-1 text-[10px] font-black rounded-full tracking-wide mb-4"
-                  style={{ backgroundColor: `${cert.accent}18`, color: cert.accent }}
-                >
-                  {cert.grade}
-                </span>
+                {/* Sub-meta: Issuer & Grade */}
+                <p className="text-black/65 text-xs font-semibold mb-3">
+                  {cert.issuer} • <span className="text-black font-bold">{cert.grade}</span>
+                </p>
 
                 {/* Description */}
-                <p className="text-xs text-black/60 leading-relaxed mb-5 flex-1">
+                <p className="text-black/80 text-sm leading-relaxed font-medium mb-6">
                   {cert.description}
                 </p>
 
-                {/* Skills */}
-                <div className="flex flex-wrap gap-1.5 mb-5">
+                {/* Skills tags */}
+                <div className="flex flex-wrap gap-1.5 mb-6">
                   {cert.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-2 py-0.5 text-[10px] font-bold rounded-full"
-                      style={{ backgroundColor: `${cert.accent}14`, color: cert.accent }}
+                      className="px-2.5 py-1 text-[11px] font-semibold bg-black/5 text-black/80 rounded-full"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
 
-                {/* LinkedIn CTA */}
-                <a
-                  href={cert.linkedinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-2.5 rounded-2xl text-white text-xs font-bold tracking-wide transition-all duration-300 hover:opacity-90 hover:shadow-md mt-auto"
-                  style={{ backgroundColor: '#0A66C2' }}
-                >
-                  <LinkedInIcon />
-                  View on LinkedIn
-                </a>
+                {/* LinkedIn verification link */}
+                <div className="pt-4 border-t border-black/10 flex items-center justify-between">
+                  <a
+                    href={cert.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-black hover:opacity-70 transition-opacity"
+                  >
+                    <span>Verify on LinkedIn</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
 
+                  <span className="text-[10px] uppercase font-bold tracking-widest text-black/40">
+                    Credential
+                  </span>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Footer CTA */}
-        <div className="mt-14 flex flex-col items-center gap-3" data-aos="fade-up">
-          <p className="text-sm text-black/40 font-medium">See all my credentials on LinkedIn</p>
+        {/* Global LinkedIn Profile CTA */}
+        <div className="mt-16 flex flex-col items-center gap-3" data-aos="fade-up">
+          <p className="text-sm text-black/50 font-medium">Explore all verified licenses & certifications</p>
           <a
-            href="https://www.linkedin.com/in/navaneethan-sankar/"
+            href="https://www.linkedin.com/in/navaneethan-sankar/details/certifications/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-3 pl-5 pr-2 py-2 rounded-full text-white text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-            style={{ backgroundColor: '#0A66C2' }}
+            className="group flex items-center gap-3 pl-6 pr-2 py-2 bg-black hover:bg-black/85 text-white text-sm font-semibold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
-            <LinkedInIcon />
-            <span>View LinkedIn Profile</span>
-            <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-[#0A66C2] transition-transform duration-300 group-hover:translate-x-0.5">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            <span>View All on LinkedIn</span>
+            <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full text-black transition-transform duration-300 group-hover:translate-x-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </div>
           </a>
