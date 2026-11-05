@@ -21,7 +21,7 @@ const About = () => {
           </h2>
 
           <p data-aos="fade-right" data-aos-delay="300" className="text-sm md:text-base lg:text-lg text-black/85 font-medium leading-relaxed max-w-lg">
-            Aspiring IT professional interested in Software Development, DSA, Web Development, and Emerging Technologies. Passionate about building scalable applications, solving real-world problems, and continuously enhancing technical and problem-solving skills.
+            Aspiring IT professional with a strong interest in Software Development, Full-Stack Development, Data Structures & Algorithms, and Emerging Technologies. Passionate about building scalable applications, solving complex technical challenges, and developing innovative solutions while continuously enhancing technical and problem-solving skills.
           </p>
 
           {/* Infinite Marquee Tags */}
