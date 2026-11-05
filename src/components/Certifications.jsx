@@ -110,7 +110,7 @@ const Certifications = () => {
             <span className="text-black/50 text-xs font-bold tracking-widest uppercase mb-1.5 block">
               — Credentials & Badges
             </span>
-            <h2 className="text-black text-3xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-none text-black">
               Certifications
             </h2>
           </div>
@@ -160,7 +160,7 @@ const Certifications = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg md:text-xl font-bold text-black mb-1.5 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-bold text-black mb-1.5 tracking-tight leading-snug">
                   {cert.title}
                 </h3>
 
