@@ -27,12 +27,12 @@ const achievements = [
   },
   {
     id: '02',
-    title: 'Smart India Hackathon (SIH) 2025 Qualifier',
+    title: 'Smart India Hackathon (SIH) 2025 Pre-Finalist',
     event: 'Ministry of Education & Central Govt. of India',
     year: '2025',
-    category: 'National Finalist',
-    metric: 'Top 53',
-    metricSub: 'Out of 300 Teams',
+    category: 'SIH Pre-Finalist',
+    metric: 'Pre-Finalist',
+    metricSub: 'Top 53 / 300 Teams',
     color: '#EEF4FF',
     accent: '#2563eb',
     icon: (
@@ -41,13 +41,13 @@ const achievements = [
       </svg>
     ),
     description:
-      'Qualified for the prestigious Smart India Hackathon (SIH) 2025 Central Government Round for CivicConnect, placing among the top 53 teams from a nationwide pool of 300 selected institutions.',
+      'Selected as a Pre-Finalist in the prestigious Smart India Hackathon (SIH) 2025 Central Government Round for CivicConnect, ranking among the top 53 teams out of 300 competitive teams nationwide.',
     highlights: [
-      'Selected for national-level problem statement under Central Government',
+      'Pre-Finalist for national-level problem statement under Central Government',
       'Engineered citizen grievance tracking workflows with real-time status updates',
       'Recognized for scalable system architecture and community impact',
     ],
-    tags: ['SIH 2025', 'CivicConnect', 'Govt of India', 'National Level', 'Full Stack'],
+    tags: ['SIH 2025', 'Pre-Finalist', 'CivicConnect', 'Govt of India', 'Top 53 / 300'],
   },
   {
     id: '03',
