@@ -7,7 +7,9 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Education from './components/Education'
 import Projects from './components/Projects'
+import CodingProfiles from './components/CodingProfiles'
 import Achievements from './components/Achievements'
+import Hackathons from './components/Hackathons'
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import './App.css'
@@ -33,8 +35,10 @@ function App() {
         <About />
         <Education />
         <Projects />
+        <CodingProfiles />
         <Achievements />
         <Certifications />
+        <Hackathons />
         <Contact />
       </div>
     </>
