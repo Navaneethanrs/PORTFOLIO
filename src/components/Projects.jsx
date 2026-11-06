@@ -23,6 +23,7 @@ const projects = [
     color: '#E8F4F8',
     accent: '#2563eb',
     link: 'https://github.com/Navaneethanrs/MediRoute',
+    liveUrl: null,
   },
   {
     id: '02',
@@ -46,6 +47,7 @@ const projects = [
     color: '#F0EBF8',
     accent: '#7c3aed',
     link: 'https://github.com/Navaneethanrs/MindBlossom',
+    liveUrl: 'https://mind-blossom.vercel.app',
   },
   {
     id: '03',
@@ -69,6 +71,7 @@ const projects = [
     color: '#FFF8E8',
     accent: '#d97706',
     link: 'https://github.com/Navaneethanrs/FOODSAVER',
+    liveUrl: 'https://foodsaver-ngo.vercel.app',
   },
   {
     id: '04',
@@ -92,6 +95,7 @@ const projects = [
     color: '#FDF0F8',
     accent: '#db2777',
     link: 'https://github.com/Navaneethanrs/madc-attendance',
+    liveUrl: null,
   },
   {
     id: '05',
@@ -115,6 +119,7 @@ const projects = [
     color: '#F5F0FF',
     accent: '#6d28d9',
     link: 'https://github.com/Navaneethanrs/Cpu-Scheduling',
+    liveUrl: 'https://cpuscheduling-lemon.vercel.app',
   },
 ];
 
@@ -136,6 +141,12 @@ const techStack = [
 const GitHubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
     <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+  </svg>
+);
+
+const ExternalIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
   </svg>
 );
 
@@ -181,7 +192,7 @@ const Modal = ({ project, onClose }) => {
         <div className="p-7 md:p-10">
 
           {/* Header */}
-          <div className="flex items-start justify-between mb-5">
+          <div className="flex items-start justify-between mb-4">
             <div>
               <span className="text-[10px] font-black tracking-widest uppercase" style={{ color: project.accent }}>
                 {project.category} · {project.year}
@@ -196,13 +207,28 @@ const Modal = ({ project, onClose }) => {
             </button>
           </div>
 
-          {/* Badge */}
-          <span
-            className="inline-block px-3 py-1 rounded-full text-[10px] font-black tracking-widest uppercase mb-7"
-            style={{ backgroundColor: `${project.accent}15`, color: project.accent }}
-          >
-            Project {project.id}
-          </span>
+          {/* Badges row: Project Number + Live Demo if available */}
+          <div className="flex flex-wrap items-center gap-2 mb-7">
+            <span
+              className="inline-block px-3 py-1 rounded-full text-[10px] font-black tracking-widest uppercase"
+              style={{ backgroundColor: `${project.accent}15`, color: project.accent }}
+            >
+              Project {project.id}
+            </span>
+
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Live Demo Available</span>
+                <ExternalIcon />
+              </a>
+            )}
+          </div>
 
           {/* Problem */}
           <div className="mb-6">
@@ -264,17 +290,32 @@ const Modal = ({ project, onClose }) => {
             </div>
           </div>
 
-          {/* CTA */}
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl text-white text-sm font-bold tracking-wide transition-all duration-300 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
-            style={{ backgroundColor: project.accent }}
-          >
-            <GitHubIcon />
-            View Source on GitHub
-          </a>
+          {/* Action CTAs: Live Demo + GitHub */}
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2.5 w-full sm:flex-1 py-3.5 rounded-2xl text-white text-sm font-bold tracking-wide transition-all duration-300 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
+                style={{ backgroundColor: project.accent }}
+              >
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                <span>Visit Live Demo</span>
+                <ExternalIcon />
+              </a>
+            )}
+
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center justify-center gap-2.5 w-full ${project.liveUrl ? 'sm:flex-1 bg-black/5 hover:bg-black text-black hover:text-white border border-black/10' : 'bg-black text-white hover:bg-black/90'} py-3.5 rounded-2xl text-sm font-bold tracking-wide transition-all duration-300 hover:shadow-md hover:-translate-y-0.5`}
+            >
+              <GitHubIcon />
+              <span>View Source on GitHub</span>
+            </a>
+          </div>
 
         </div>
       </div>
@@ -298,7 +339,7 @@ const Projects = () => {
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-none">Projects</h2>
             </div>
             <p data-aos="fade-up" data-aos-delay="150" className="text-black/50 text-sm font-medium max-w-xs md:text-right leading-relaxed">
-              Click any project for a full overview.<br />Built across web, mobile & AI.
+              Explore working demos & codebases.<br />Click any project for deep overview.
             </p>
           </div>
 
@@ -336,20 +377,48 @@ const Projects = () => {
               >
                 <div className={`p-7 md:p-10 h-full flex flex-col justify-between ${index === 0 ? 'min-h-[200px] md:min-h-[220px]' : 'min-h-[240px]'}`}>
 
-                  <div className="flex items-start justify-between">
+                  {/* Top Bar on Card */}
+                  <div className="flex items-start justify-between gap-3">
                     <div className="flex flex-col gap-1">
-                      <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: project.accent }}>{project.category}</span>
+                      <span className="text-[10px] font-bold tracking-widest uppercase" style={{ color: project.accent }}>
+                        {project.category}
+                      </span>
                       <span className="text-[10px] font-semibold text-black/35">{project.year}</span>
                     </div>
-                    <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
-                      <span className="text-[10px] font-bold" style={{ color: project.accent }}>View Overview</span>
-                      <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-black" style={{ backgroundColor: project.accent }}>↗</div>
+
+                    <div className="flex items-center gap-2">
+                      {/* Live Demo Pill on card if available */}
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          title="Open live demo in new tab"
+                          className="flex items-center gap-1.5 px-3 py-1 bg-white/80 hover:bg-black text-black hover:text-white border border-black/10 rounded-full text-[10px] font-bold tracking-wider uppercase transition-all duration-300 shadow-2xs hover:scale-105"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                          <span>Live Demo</span>
+                          <ExternalIcon />
+                        </a>
+                      )}
+
+                      {/* Overview hint */}
+                      <div className="flex items-center gap-1.5 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
+                        <span className="text-[10px] font-bold hidden sm:inline" style={{ color: project.accent }}>
+                          Overview
+                        </span>
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-black" style={{ backgroundColor: project.accent }}>
+                          ↗
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="mt-auto">
+                  {/* Bottom Content on Card */}
+                  <div className="mt-auto pt-6">
                     <p className="text-[10px] font-black tracking-widest text-black/25 uppercase mb-1.5">{project.id}</p>
-                    <h3 className={`font-black tracking-tight mb-3 text-black group-hover:translate-x-1 transition-transform duration-300 ${index === 0 ? 'text-3xl md:text-4xl' : 'text-2xl md:text-3xl'}`}>
+                    <h3 className={`font-black tracking-tight mb-2.5 text-black group-hover:translate-x-1 transition-transform duration-300 ${index === 0 ? 'text-3xl md:text-4xl' : 'text-2xl md:text-3xl'}`}>
                       {project.title}
                     </h3>
                     <p className="text-sm text-black/55 leading-relaxed mb-4 max-w-lg line-clamp-2">{project.description}</p>
