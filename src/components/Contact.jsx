@@ -36,12 +36,12 @@ const Contact = () => {
         {/* Title */}
         <h1 
           data-aos="fade-up" 
-          className="text-6xl md:text-8xl lg:text-[10vw] font-black tracking-tighter mb-4 leading-none"
+          className="text-6xl md:text-8xl lg:text-[10vw] font-black tracking-tighter mb-3 leading-none"
         >
           Contact me
         </h1>
-        <p data-aos="fade-up" data-aos-delay="100" className="text-base md:text-xl text-neutral-600 mb-16 max-w-xl font-medium">
-          Interested in discussing internship opportunities, engineering roles, or hackathon collaboration? Let's connect.
+        <p data-aos="fade-up" data-aos-delay="100" className="text-sm md:text-base text-neutral-500 mb-12 max-w-xl font-medium">
+          Open to software engineering opportunities, technical collaborations, and discussions.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm font-bold text-black tracking-tight">GitHub</span>
-                <span className="text-xs text-neutral-500 font-medium truncate">@Navaneethanrs (19 Repositories)</span>
+                <span className="text-xs text-neutral-500 font-medium truncate">github.com/Navaneethanrs</span>
               </div>
             </a>
 
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm font-bold text-black tracking-tight">LinkedIn</span>
-                <span className="text-xs text-neutral-500 font-medium truncate">navaneethan-sankar</span>
+                <span className="text-xs text-neutral-500 font-medium truncate">linkedin.com/in/navaneethan-sankar</span>
               </div>
             </a>
 
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm font-bold text-black tracking-tight">LeetCode</span>
-                <span className="text-xs text-neutral-500 font-medium truncate">240+ Solved (1460 Rating)</span>
+                <span className="text-xs text-neutral-500 font-medium truncate">leetcode.com/u/NAVANEETHAN_SANKAR</span>
               </div>
             </a>
 
