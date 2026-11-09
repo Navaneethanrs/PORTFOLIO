@@ -47,7 +47,8 @@ const Navbar = () => {
     { name: 'Achievements', href: '#achievements' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Hackathons', href: '#hackathons' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
+    { name: 'Resume', href: '/Navaneethan_RS_Resume.pdf', external: true }
   ];
 
   return (
@@ -75,6 +76,8 @@ const Navbar = () => {
               <li key={index}>
                 <a 
                   href={link.href} 
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className="text-black text-[13px] font-medium tracking-widest uppercase hover:text-black/50 transition-colors duration-200"
                 >
                   {link.name}
@@ -111,6 +114,8 @@ const Navbar = () => {
             >
               <a 
                 href={link.href} 
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-black text-3xl font-bold tracking-widest uppercase hover:text-black/50 transition-colors"
               >

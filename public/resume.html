@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navaneethan RS - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 12mm 8mm 12mm;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: "Times New Roman", Times, "Cambria", Georgia, serif;
+      font-size: 9.1pt;
+      line-height: 1.22;
+      color: #111;
+      background-color: #f7f7f7;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 9mm 14mm;
+      margin: 10px auto;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Print toolbar */
+    .toolbar {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:hover {
+      background: #333;
+      transform: translateY(-1px);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .name {
+      font-size: 18pt;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .contact-line {
+      font-size: 8.5pt;
+      color: #222;
+      margin-bottom: 1.5px;
+    }
+
+    .contact-line a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .separator {
+      margin: 0 4px;
+      color: #555;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-top: 5px;
+      margin-bottom: 3px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: bold;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border-bottom: 0.75pt solid #111;
+      padding-bottom: 1px;
+      margin-bottom: 3px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 2px;
+    }
+
+    /* Education */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2.5px;
+    }
+
+    .edu-left {
+      width: 76%;
+    }
+
+    .edu-year {
+      font-weight: normal;
+      display: inline-block;
+      width: 75px;
+    }
+
+    .edu-inst {
+      font-weight: bold;
+    }
+
+    .edu-degree {
+      display: block;
+      padding-left: 75px;
+      color: #333;
+      font-size: 8.6pt;
+    }
+
+    .edu-right {
+      text-align: right;
+      width: 24%;
+    }
+
+    .edu-score {
+      font-weight: bold;
+    }
+
+    .edu-sem {
+      display: block;
+      font-size: 8.2pt;
+      color: #555;
+    }
+
+    /* Technical Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.9pt;
+    }
+
+    .skills-table td {
+      padding: 0.8px 0;
+      vertical-align: top;
+    }
+
+    .skill-category {
+      font-weight: bold;
+      width: 125px;
+      color: #111;
+    }
+
+    .skill-list {
+      color: #222;
+    }
+
+    /* Projects */
+    .project-entry {
+      margin-bottom: 4px;
+    }
+
+    .project-header {
+      font-weight: bold;
+      font-size: 9.3pt;
+      color: #111;
+    }
+
+    .project-link {
+      font-size: 8.2pt;
+      font-family: "Times New Roman", Times, serif;
+      color: #0b3e82;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .project-desc {
+      text-align: justify;
+      margin-bottom: 1px;
+      font-size: 8.9pt;
+      padding-left: 1px;
+    }
+
+    .project-tech {
+      font-size: 8.4pt;
+      margin-top: 0.5px;
+    }
+
+    .project-tech strong {
+      font-weight: bold;
+    }
+
+    /* Lists */
+    ul {
+      list-style-type: disc;
+      margin-left: 13px;
+      margin-bottom: 1px;
+    }
+
+    li {
+      margin-bottom: 1.5px;
+      text-align: justify;
+      font-size: 8.9pt;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Print Action Toolbar (Hidden when printing/exporting to PDF) -->
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="page">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <div class="name">NAVANEETHAN RS</div>
+      <div class="contact-line">
+        <a href="https://github.com/Navaneethanrs" target="_blank">github.com/Navaneethanrs</a>
+        <span class="separator">|</span>
+        <a href="https://www.linkedin.com/in/navaneethan-sankar/" target="_blank">linkedin.com/in/navaneethan-sankar</a>
+        <span class="separator">|</span>
+        <a href="https://leetcode.com/u/NAVANEETHAN_SANKAR/" target="_blank">leetcode.com/u/NAVANEETHAN_SANKAR</a>
+      </div>
+      <div class="contact-line">
+        <a href="mailto:navaneethanrs106@gmail.com">navaneethanrs106@gmail.com</a>
+        <span class="separator">|</span>
+        <span>+91 9342512455</span>
+        <span class="separator">|</span>
+        <span>Salem, Tamil Nadu</span>
+      </div>
+    </div>
+
+    <!-- CAREER OBJECTIVE -->
+    <div class="section">
+      <div class="section-title">Career Objective</div>
+      <p>
+        To obtain a software development opportunity where strong foundations in Data Structures and Algorithms, Object-Oriented Programming, Full-Stack Web Development, and real-time systems can be applied to build impactful software solutions. Committed to continuous learning, engineering clean code, and contributing to organizational success.
+      </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      
+      <div class="edu-entry">
+        <div class="edu-left">
+          <span class="edu-year">2024 &ndash; 2028</span>
+          <span class="edu-inst">Kongu Engineering College, Perundurai, Erode</span>
+          <span class="edu-degree">B.Tech in Information Technology</span>
+        </div>
+        <div class="edu-right">
+          <span class="edu-score">CGPA: 8.44/10.0</span>
+          <span class="edu-sem">(as of Semester IV)</span>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-left">
+          <span class="edu-year">2023 &ndash; 2024</span>
+          <span class="edu-inst">SRV Boys Higher Secondary School, Rasipuram</span>
+          <span class="edu-degree">Higher Secondary (Class XII) &ndash; Bio-Maths (State Board)</span>
+        </div>
+        <div class="edu-right">
+          <span class="edu-score">85.83%</span>
+          <span class="edu-sem">(515 / 600)</span>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-left">
+          <span class="edu-year">2020 &ndash; 2021</span>
+          <span class="edu-inst">Royal Park Matriculation Higher Secondary School, Salem</span>
+          <span class="edu-degree">Secondary (Class X) &ndash; State Board</span>
+        </div>
+        <div class="edu-right">
+          <span class="edu-score">83.00%</span>
+          <span class="edu-sem">(415 / 500)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <table class="skills-table">
+        <tr>
+          <td class="skill-category">Languages</td>
+          <td class="skill-list">C, C++, Java, JavaScript (ES6+), Python, PHP, Dart, SQL</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Web Technologies</td>
+          <td class="skill-list">React.js, Node.js, Express.js, HTML5, CSS3, Tailwind CSS, REST APIs, Socket.IO</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Databases</td>
+          <td class="skill-list">MySQL, MongoDB</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Tools & Platforms</td>
+          <td class="skill-list">Git, GitHub, VS Code, Postman, Vercel, Vite</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Core Concepts</td>
+          <td class="skill-list">Data Structures and Algorithms, Object-Oriented Programming (OOP), System Architecture</td>
+        </tr>
+        <tr>
+          <td class="skill-category">Areas of Interest</td>
+          <td class="skill-list">Full-Stack Web Development, Real-Time Distributed Systems, IoT Automation</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <!-- Project 1 -->
+      <div class="project-entry">
+        <div class="project-header">MediRoute – Smart Ambulance Traffic Control & Hospital Coordination System</div>
+        <a class="project-link" href="https://github.com/Navaneethanrs/MediRoute" target="_blank">https://github.com/Navaneethanrs/MediRoute</a>
+        <div class="project-desc">
+          Built a real-time emergency healthcare routing platform utilizing GPS telemetry and WebSocket (Socket.IO) connections to optimize hospital coordination and patient routing. Implemented IoT-enabled traffic signal automation to establish dynamic green corridors and reduce emergency transit delays.
+        </div>
+        <div class="project-tech"><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB, Socket.IO, Leaflet Maps, Arduino IDE</div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-entry">
+        <div class="project-header">CivicConnect – Citizen Grievance Reporting & Resolution Platform (SIH 2025)</div>
+        <a class="project-link" href="https://github.com/Navaneethanrs/Civic-Connect" target="_blank">https://github.com/Navaneethanrs/Civic-Connect</a>
+        <div class="project-desc">
+          Engineered an end-to-end civic grievance reporting portal connecting citizens with local municipal authorities for Smart India Hackathon (SIH 2025). Enabled automated GPS tagging, photo uploads, role-based departmental routing, and real-time issue status tracking with optimized MongoDB workflows.
+        </div>
+        <div class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Node.js, Express.js, MongoDB, REST APIs</div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-entry">
+        <div class="project-header">FoodSaver – Surplus Food Redistribution & NGO Matching Platform</div>
+        <a class="project-link" href="https://github.com/Navaneethanrs/FOODSAVER" target="_blank">https://github.com/Navaneethanrs/FOODSAVER</a>
+        <div class="project-desc">
+          Developed a surplus food donation platform that connects commercial banquet donors and restaurants with nearby NGOs to reduce urban food wastage. Implemented donor-NGO geo-proximity matching algorithms, request tracking, and automated transactional dispatch alerts using PHPMailer.
+        </div>
+        <div class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, JavaScript, PHP, MySQL, PHPMailer</div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-entry">
+        <div class="project-header">MindBlossom – Anonymous AI Mental Wellness Companion</div>
+        <a class="project-link" href="https://github.com/Navaneethanrs/MindBlossom" target="_blank">https://github.com/Navaneethanrs/MindBlossom</a>
+        <div class="project-desc">
+          Built a user-centric wellness platform with personalized self-improvement features to promote mental well-being and user engagement. Implemented anonymous speech-to-text input, mood-based reflection recommendations, and deployed the full-stack application with MongoDB on Vercel.
+        </div>
+        <div class="project-tech"><strong>Technologies:</strong> React.js, JavaScript, Node.js, Web Speech API, MongoDB, Vercel</div>
+      </div>
+
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+      <div class="section-title">Achievements</div>
+      <ul>
+        <li>
+          <span class="bold">Secured 1st Place in 3 College-Level Hackathons</span> for developing MediRoute, an IoT-powered smart ambulance–hospital coordination platform.
+        </li>
+        <li>
+          <span class="bold">Pre-Finalist in Smart India Hackathon (SIH 2025) Central Government Round</span>, placing among the <span class="bold">Top 53 teams out of 300</span> teams nationwide for CivicConnect.
+        </li>
+        <li>
+          <span class="bold">Selected among the Top 80 candidates from 2,000+ applicants nationwide</span> for the Elite PACC Training Program by GeeksforGeeks.
+        </li>
+        <li>
+          <span class="bold">Solved 600+ coding problems</span> across LeetCode (<a href="https://leetcode.com/u/NAVANEETHAN_SANKAR/" target="_blank" style="color:#111;text-decoration:none;">@NAVANEETHAN_SANKAR</a>, 240+ solved, contest rating 1460) and GeeksforGeeks (351+ solved, score 715, rank #87).
+        </li>
+        <li>
+          <span class="bold">Active Participant in National Technical Hackathons</span>, including the ISRO Bharatiya Antariksh Hackathon 2026, VIT Chennai DataQuest 3, Proof of Concept (PoC), and Ideathon.
+        </li>
+      </ul>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+      <div class="section-title">Certifications</div>
+      <ul>
+        <li>
+          <span class="bold">Bharatiya Antariksh Hackathon 2026</span> &ndash; ISRO &amp; Hack2skill (Credential ID: <span style="font-family:monospace;font-size:8.5pt;">2026H2S06BAH-P30962</span>)
+        </li>
+        <li>
+          <span class="bold">MATLAB &amp; Simulink Onramp (100% Score)</span> &ndash; MathWorks
+        </li>
+        <li>
+          <span class="bold">Node.js &amp; MongoDB Application Case Study</span> &ndash; Infosys Springboard
+        </li>
+        <li>
+          <span class="bold">MongoDB for Developers</span> &ndash; Infosys Springboard
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

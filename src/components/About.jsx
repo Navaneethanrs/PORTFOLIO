@@ -24,6 +24,29 @@ const About = () => {
             Aspiring IT professional with a strong interest in Software Development, Full-Stack Development, Data Structures & Algorithms, and Emerging Technologies. Passionate about building scalable applications, solving complex technical challenges, and developing innovative solutions while continuously enhancing technical and problem-solving skills.
           </p>
 
+          {/* Resume Action Buttons */}
+          <div data-aos="fade-right" data-aos-delay="350" className="flex flex-wrap items-center gap-3 pt-2">
+            <a
+              href="/Navaneethan_RS_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-black text-white text-xs md:text-sm font-semibold rounded-full shadow-lg hover:bg-neutral-800 transition-all duration-300 hover:scale-[1.02] active:scale-95"
+            >
+              <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              Download Resume (PDF)
+            </a>
+            <a
+              href="/resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 border border-black/30 text-black text-xs md:text-sm font-semibold rounded-full hover:bg-black/5 transition-all duration-300"
+            >
+              View Online ↗
+            </a>
+          </div>
+
           {/* Infinite Marquee Tags */}
           <div data-aos="fade-right" data-aos-delay="400" className="w-full max-w-[90vw] md:max-w-md overflow-hidden flex flex-col gap-3 mt-4 lg:mt-8 relative mask-image-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
             
