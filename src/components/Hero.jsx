@@ -90,11 +90,12 @@ const Hero = () => {
 
             <a 
               href="/Navaneethan_RS_Resume.pdf" 
+              download="Navaneethan_RS_Resume.pdf"
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex items-center gap-3 pl-5 pr-1.5 py-1.5 bg-white/95 hover:bg-white text-black text-xs md:text-sm font-semibold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] border border-black/15 shadow-sm"
             >
-              <span>Resume</span>
+              <span>Download Resume</span>
               <div className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 bg-black rounded-full transition-transform duration-300 group-hover:translate-y-0.5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="white" className="w-3.5 h-3.5 md:w-4 md:h-4">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />

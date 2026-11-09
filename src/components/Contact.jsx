@@ -116,7 +116,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm font-bold text-white tracking-tight">Curriculum Vitae</span>
-                <span className="text-xs text-neutral-300 font-medium truncate">Download Resume (PDF)</span>
+                <span className="text-xs text-neutral-300 font-medium truncate">Download Resume</span>
               </div>
             </a>
           </div>
