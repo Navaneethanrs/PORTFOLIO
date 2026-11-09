@@ -1,0 +1,56 @@
+[
+  {
+    "fullName": "Dr. K. S. Navaneethan",
+    "firstName": "Navaneethan",
+    "lastName": "K. S.",
+    "position": "Assistant Professor & NSS Program Officer",
+    "company": "Kongu Engineering College (KEC)",
+    "category": "Faculty / Academic Mentor",
+    "details": "Senior faculty member and NSS coordinator at Kongu Engineering College."
+  },
+  {
+    "fullName": "Head of Department (IT)",
+    "firstName": "HOD",
+    "lastName": "IT Department",
+    "position": "Professor & Head of Information Technology",
+    "company": "Kongu Engineering College",
+    "category": "Department Leadership",
+    "details": "Department head overseeing B.Tech Information Technology curriculum and student technical innovations."
+  },
+  {
+    "fullName": "MediRoute Hackathon Teammate",
+    "firstName": "MediRoute",
+    "lastName": "Teammate",
+    "position": "IoT & Hardware Simulation Collaborator",
+    "company": "Kongu Engineering College",
+    "category": "Hackathon Teammate",
+    "details": "Co-developer on the MediRoute smart ambulance green corridor project (Won 1st Place across 3 hackathons)."
+  },
+  {
+    "fullName": "CivicConnect SIH Team Member",
+    "firstName": "CivicConnect",
+    "lastName": "Collaborator",
+    "position": "Student Developer",
+    "company": "Kongu Engineering College",
+    "category": "Smart India Hackathon 2025 Pre-Finalist",
+    "details": "Collaborator on CivicConnect for SIH 2025 Central Government round (Top 53 / 300 nationwide)."
+  },
+  {
+    "fullName": "MADC Club Core Member",
+    "firstName": "MADC",
+    "lastName": "Peer",
+    "position": "Mobile Application Developer",
+    "company": "Mobile App Development Club (MADC)",
+    "category": "Club Peer",
+    "details": "Collaborates on Flutter, Android/iOS, and React Three Fiber club software projects."
+  },
+  {
+    "fullName": "GFG Elite PACC Peer",
+    "firstName": "GFG",
+    "lastName": "Peer",
+    "position": "Competitive Programmer",
+    "company": "GeeksforGeeks Elite Batch",
+    "category": "Competitive Coding Network",
+    "details": "Fellow member selected in the Top 80 out of 2,000+ candidates for advanced DSA and system design training."
+  }
+]

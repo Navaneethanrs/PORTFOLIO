@@ -12,6 +12,7 @@ import Achievements from './components/Achievements'
 import Hackathons from './components/Hackathons'
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
+import Chatbot from './components/Chatbot'
 import './App.css'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Certifications />
         <Hackathons />
         <Contact />
+        <Chatbot />
       </div>
     </>
   )
