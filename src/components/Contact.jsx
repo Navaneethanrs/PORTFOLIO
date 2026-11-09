@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    opportunityType: '',
-    company: '',
     message: ''
   });
 
@@ -20,15 +17,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Create a pre-filled mailto link as a seamless direct connection
-    const subject = encodeURIComponent(
-      `[Portfolio Inquiry] ${formData.opportunityType || 'General Opportunity'} from ${formData.firstName} ${formData.lastName}`
-    );
+    const subject = encodeURIComponent(`[Portfolio Message] from ${formData.name}`);
     const body = encodeURIComponent(
-      `Name: ${formData.firstName} ${formData.lastName}\n` +
-      `Email: ${formData.email}\n` +
-      (formData.company ? `Company / College: ${formData.company}\n` : '') +
-      `Interest / Role: ${formData.opportunityType || 'Not specified'}\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n\n` +
       `Message:\n${formData.message}`
     );
 
@@ -129,135 +121,82 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Right Column: Professional B.Tech IT Contact Form */}
+          {/* Right Column: Clean Modern Form matching reference design */}
           <div className="md:col-span-7 lg:col-span-7 lg:col-start-6" data-aos="fade-left" data-aos-delay="300">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-6 sm:p-8 rounded-3xl bg-neutral-50/70 border border-neutral-200/80 shadow-sm">
-              
-              {/* Name Fields */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2">
-                  Full Name <span className="text-rose-500">*</span>
-                </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input 
-                    type="text" 
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="First Name" 
-                    className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
-                    required
-                  />
-                  <input 
-                    type="text" 
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    placeholder="Last Name" 
-                    className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
-                    required
-                  />
-                </div>
-              </div>
+            <div className="bg-white rounded-[28px] p-6 sm:p-8 md:p-9 border border-black/10 shadow-[0_4px_25px_rgba(0,0,0,0.04)]">
+              <form onSubmit={handleSubmit} className="flex flex-col">
+                
+                {/* Row 1: NAME & EMAIL */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+                  <div>
+                    <label className="block text-[11px] font-bold tracking-wider text-neutral-500 uppercase mb-2">
+                      NAME
+                    </label>
+                    <input 
+                      type="text" 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Your name" 
+                      className="w-full bg-[#f8f9fa] hover:bg-[#f1f3f5] focus:bg-white border border-transparent focus:border-neutral-300 rounded-2xl px-4 py-3.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all"
+                      required
+                    />
+                  </div>
 
-              {/* Email & Company */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2">
-                    Email Address <span className="text-rose-500">*</span>
-                  </label>
-                  <input 
-                    type="email" 
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="recruiter@company.com" 
-                    className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2">
-                    Company / Organization
-                  </label>
-                  <input 
-                    type="text" 
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Company or College name" 
-                    className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
-                  />
-                </div>
-              </div>
-
-              {/* Opportunity Type / Inquiry Purpose */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2">
-                  Purpose / Opportunity Type <span className="text-rose-500">*</span>
-                </label>
-                <div className="relative">
-                  <select 
-                    name="opportunityType"
-                    value={formData.opportunityType}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled>Select an opportunity or topic</option>
-                    <option value="Software Engineering Internship">Software Engineering Internship</option>
-                    <option value="Full-Stack Web Development Role">Full-Stack Web Development Role</option>
-                    <option value="Hackathon / Project Collaboration">Hackathon / Project Collaboration</option>
-                    <option value="Technical Mentorship / Discussion">Technical Mentorship / Discussion</option>
-                    <option value="General Professional Inquiry">General Professional Inquiry</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-neutral-500">
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                      <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
-                    </svg>
+                  <div>
+                    <label className="block text-[11px] font-bold tracking-wider text-neutral-500 uppercase mb-2">
+                      EMAIL
+                    </label>
+                    <input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="you@example.com" 
+                      className="w-full bg-[#f8f9fa] hover:bg-[#f1f3f5] focus:bg-white border border-transparent focus:border-neutral-300 rounded-2xl px-4 py-3.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all"
+                      required
+                    />
                   </div>
                 </div>
-              </div>
 
-              {/* Message / Opportunity Description */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-2">
-                  Message / Details <span className="text-rose-500">*</span>
-                </label>
-                <textarea 
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="4" 
-                  placeholder="Share details about the role, technical challenge, or opportunity..."
-                  className="w-full bg-white border border-neutral-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all resize-none"
-                  required
-                />
-              </div>
+                {/* Row 2: MESSAGE */}
+                <div className="mb-6">
+                  <label className="block text-[11px] font-bold tracking-wider text-neutral-500 uppercase mb-2">
+                    MESSAGE
+                  </label>
+                  <textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows="5" 
+                    placeholder="Tell me about the opportunity or idea..."
+                    className="w-full bg-[#f8f9fa] hover:bg-[#f1f3f5] focus:bg-white border border-transparent focus:border-neutral-300 rounded-2xl px-4 py-3.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all resize-none"
+                    required
+                  />
+                </div>
 
-              {/* Submit & Status */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+                {/* Row 3: Send Message Button */}
                 <button 
                   type="submit" 
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-neutral-800 active:scale-95 transition-all shadow-md cursor-pointer"
+                  className="w-full bg-[#0c1222] hover:bg-black text-white text-sm font-semibold py-4 px-6 rounded-2xl flex items-center justify-center gap-2.5 transition-all duration-200 hover:shadow-lg active:scale-[0.99] cursor-pointer"
                 >
                   <span>Send Message</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.2} stroke="currentColor" className="w-4 h-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
                 </button>
 
                 {isSubmitted && (
-                  <p className="text-xs text-emerald-600 font-bold flex items-center gap-1.5 animate-fade-in">
+                  <p className="mt-3 text-xs text-center text-emerald-600 font-bold flex items-center justify-center gap-1.5 animate-fade-in">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
                     Email client launched!
                   </p>
                 )}
-              </div>
 
-            </form>
+              </form>
+            </div>
           </div>
 
         </div>
