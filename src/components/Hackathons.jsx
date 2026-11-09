@@ -266,12 +266,12 @@ const Hackathons = () => {
                 <h3 className="text-base font-bold text-black tracking-tight leading-snug mb-1 group-hover:text-black/80 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-[11px] font-semibold text-black/50 mb-3 line-clamp-1">
+                <p className="text-[11px] font-semibold text-black/50 mb-3">
                   {item.organizer}
                 </p>
 
-                {/* Short Description */}
-                <p className="text-black/70 text-xs leading-relaxed mb-4 line-clamp-2">
+                {/* Description */}
+                <p className="text-black/70 text-xs leading-relaxed mb-4">
                   {item.description}
                 </p>
 
